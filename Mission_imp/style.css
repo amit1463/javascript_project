@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("");
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 400px;
+     height: 400px;
+     align-items: center;
+     border: 2px solid aliceblue;
+     margin-top: 100px;
+     border-radius: 5px;
+     box-shadow: 5px 10px #888888;
+}
+
+#img{
+    width: 100%;
+    height: 300px;
+    background-image: url("OIP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+#btn{
+    background-color: rgb(235, 29, 70 , .7);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn button{
+    color: white;
+    padding: 6px 10px 6px 10px;
+    background-color: rgb(11, 24, 24);
+    border-radius: 5px;
+}
+
+
