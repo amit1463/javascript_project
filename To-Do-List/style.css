@@ -1,0 +1,121 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#main::before{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    position: absolute;
+    background-image: url("pexels-daria-shevtsova-3793316.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.85;
+    /* opacity: ; */
+
+}
+
+#main{
+    border: 1.8px solid white;
+    height: 85vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 4px 4px 5px rgb(51, 46, 39);
+    border-radius: 10px;
+    /* overflow: hidden; */
+    padding: 0;
+    
+}
+
+
+
+input{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border-style: none;
+    border: 1.5px solid olive;
+    font-weight: 500;
+}
+
+h1{
+    
+    color: rgb(156, 91, 30);
+    font-family: "Audiowide", sans-serif;
+  font-size: 38px;
+  text-shadow: 3px 3px 3px whitesmoke;
+  font-weight: bold;
+    
+}
+
+#para{
+    font-family: "Sofia", sans-serif;
+    color: white;
+    font-size: 18px;
+    background-color: #155799;
+    /* border: 1px solid ; */
+    border-radius: 10px;
+    margin: 8px;
+    padding: 2px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 5px blanchedalmond;
+    /* text-decoration: line-through; */
+}
+
+#main button{
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #77acf1;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: white;
+    transition: .3s ease-in-out;
+    outline: none;
+    margin-left: 5px;
+    box-shadow: 5px 5px 8px rgb(41, 40, 38);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: translateY(5px);
+}
+
+#show{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    height: 61vh;
+    width: 20vw;
+    overflow:auto;
+    /* padding: 20px; */
+}
+
+#show::-webkit-scrollbar{
+    display: none;
+}
+
+#text{
+    display: flex;
+}
