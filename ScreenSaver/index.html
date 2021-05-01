@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screensaver with play/pause button with some functionality</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Princess Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay loop muted>
+            <source src="pexels-rostislav-uzunov-7385122.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="container">
+        <span id="text1">Screen-Saver</span>
+        <hr style="color: whitesmoke; font-weight: bold; width: 400px;">
+        <div id="text2">
+            <span id="txtCounter">1</span>/5
+        </div>
+        <!-- image: 1/5 -->
+        <img name="image" id="img" src="" alt="Wallpapers" style="width: 600px; height: 420px;">
+        <div id="allCircle">
+            <div class="circle" style="background-color: whitesmoke;"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <!-- <button>play</button> -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
