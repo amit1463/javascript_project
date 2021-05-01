@@ -14,7 +14,7 @@ btn.addEventListener("click", ()=> {
     else{
         alert('Insert some text');
     }
-    // input.value="";
+    input.value="";
     para.addEventListener('click',removePara);
     
     var i=0;
@@ -24,8 +24,9 @@ btn.addEventListener("click", ()=> {
             para.style.textDecoration ="line-through";
         }
         else if(i==2){
-            var index = Array.prototype.indexOf.call(show.children,para);
-            show.removeChild(show.childNodes[index]);
+            // var index = Array.prototype.indexOf.call(show.children,para);
+            // show.removeChild(show.childNodes[index]);
+            show.removeChild(para);
         }
       
     } 
