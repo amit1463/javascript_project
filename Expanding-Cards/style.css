@@ -1,0 +1,91 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: wheat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: cursive;
+    margin: 0;
+}
+#line{
+    display: flex;
+    margin-top: 5px;
+}
+#main{
+    /* height: 90vh; */
+    margin: 0;
+    width: 90vw;
+    display: flex;
+}
+
+
+.card{
+    /* min-width: 20vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 80vh;
+    flex: .7;
+    margin: 8px 9px 5px 9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+    opacity: 0.6;
+    transition: all 1s ease-in;
+    border: 1px solid violet;
+    box-shadow: 3px 3px 5px rgb(20, 20, 18);
+}
+
+.card h3{
+    font-size: 25px;
+    color: ivory;
+    font-family: fantasy;
+    font-weight: 400;
+    position: relative;
+    top: 30vh;
+    margin: 2px;
+    opacity: 0;
+    transition: opacity .6s ease-in .6s;
+    /* left: 5vw; */
+}
+
+.active{
+    flex: 5;
+    opacity: 1;
+
+    animation-name: fade;
+    animation-duration: 1s;
+    border: 1px solid tomato;
+    box-shadow: 6px 6px 10px rgba(32, 28, 29, 0.6);
+}
+
+.active h3{
+    opacity: 1;
+    /* transition: opacity .3s ease-in .4s; */
+}
+@keyframes fade{
+    0%{
+        opacity:0.6;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* .fade{
+
+} */

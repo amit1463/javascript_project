@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="music_container">
+        <!-- Music Name and Artist Name -->
+        <h2 id="title">NUMB</h2>
+        <h3 id="artist">Linkin Park</h3>
+
+        <div id="parent">
+          <!-- sound display bar and percentage -->
+          <div id="display_sound">
+            <div id="percent">0%</div>
+            <div id="display_bar">
+              <div id="sound_bar"></div>
+            </div>
+          </div>
+          <!-- image-container -->
+          <div id="img_container">
+            <img src="img1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- audio-select -->
+        <audio src="song1.mp3"></audio>
+
+        <!-- progress Bar -->
+        <div class="progressbar_container" id="progress_container">
+          <div class="progress_duration_meter">
+            <div id="current_time">0:00</div>
+            <div id="duration">3:05</div>
+          </div>
+
+          <div class="progress_div" id="progress_div" title="seek">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+
+        <!-- music-controlling-container -->
+        <div id="music_controls">
+          <div class="extra">
+            <div id="repeat">
+              <img id="rptimg"
+                src="repeat.jpg"
+                alt=""
+              />
+            </div>
+            <div id="mute">
+              <i id="volume_icon" class="fas fa-volume-up" title="Mute"></i>
+            </div>
+          </div>
+          <div id="all_controls">
+            <btn id="vol_up">+</btn>
+            <div id="controls">
+              <i class="fas fa-backward" id="prev" title="Previous"></i>
+              <i class="fas fa-play main-button" id="play" title="Play"></i>
+              <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+            <btn id="vol_down">-</btn>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
