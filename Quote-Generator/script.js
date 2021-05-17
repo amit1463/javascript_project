@@ -6,10 +6,10 @@ function quoteGenerator(){
     let file = "https://type.fit/api/quotes";
     fetch(file)
     .then(response => {
-        return response.json()
+        return response.json();
     })
     .then(data=>{
-        if(i==data.length)
+        if(i==data.legth)
             i=0
         else
             i++;
@@ -20,4 +20,4 @@ function quoteGenerator(){
     });
 }
 
-setInterval(quoteGenerator,4500);
+setInterval(quoteGenerator,4000);
