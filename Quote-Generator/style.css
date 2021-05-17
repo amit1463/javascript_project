@@ -93,5 +93,38 @@ html{
     
     }
 
+}
+
+@media only screen and (max-width:450px){
+    html{
+        font-size:7px;
+    }
+    .main .quote{
+        height: 40vh;
+    }
+
+    .main .author{
+        margin-left: 15rem;
+        /* float: right; */
+        margin-top: .3rem;
+    
+    }
+
+}
+
+@media only screen and (max-width:350px){
+    html{
+        font-size:5.5px;
+    }
+    .main .quote{
+        height: 40vh;
+    }
+
+    .main .author{
+        margin-left: 13rem;
+        /* float: right; */
+        margin-top: .28rem;
+    
+    }
 
 }
