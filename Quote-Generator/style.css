@@ -64,15 +64,12 @@ html{
 
 @media only screen and (max-width:968px){
     html{
-        font-size:9px;
+        font-size:9.5px;
     }
     .main .quote{
         height: 45vh;
     }
     .main .author{
-        font-size: 1.3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        /* font-style: italic; */
         margin-left: 25rem;
         /* float: right; */
         margin-top: .8rem;
@@ -83,16 +80,13 @@ html{
 
 @media only screen and (max-width:768px){
     html{
-        font-size:6px;
+        font-size:8.5px;
     }
     .main .quote{
         height: 40vh;
     }
 
     .main .author{
-        font-size: 1.3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        /* font-style: italic; */
         margin-left: 20rem;
         /* float: right; */
         margin-top: .5rem;
