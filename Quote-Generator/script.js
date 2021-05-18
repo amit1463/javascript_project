@@ -8,15 +8,13 @@ function quoteGenerator(){
     .then(response => {
         return response.json();
     })
-    .then(data=>{
-        if(i==data.legth)
-            i=0
-        else
-            i++;
-           
+    .then(data=>{   
+        if(i==data.length){
+            i=0;
+        }
         text.innerHTML = data[i].text;
         author.innerHTML = data[i].author;
-
+        i++;
     });
 }
 
