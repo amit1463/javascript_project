@@ -8,17 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://kit.fontawesome.com/f216ba5ba8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div id="main">
-        <h1>To-Do-List</h1>
-        <div id="text">
-            <input id="input" type="text">
-            <button id="btn">+</button>    
-        </div>   
-        <div id="show"></div>
+    <div id="container">
+        <div id="main">
+            <h1>To-Do-List</h1>
+            <div id="text">
+                <input id="input" type="text">
+                <button id="btn">+</button>    
+            </div>   
+            <div id="show"></div>
+        </div>
+        <div id="editor">
+
+            <div id="child">
+                <textarea name="" id="can-edit" cols="30" rows="3"></textarea>
+                <button id="btn2">Save</button>
+            </div>
+            
+        </div>
+
     </div>
+
+    
 
     <script src="script.js"></script>
 </body>
