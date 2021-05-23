@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center ;
+            background-color: #333;
+            color: #f0f0f0;
+        }
+
+        .container{
+            width: 70vw;
+            height: 65vh;
+            background-color: #606060;
+            padding: 0px 10px ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .container > div{
+            float:left;
+            overflow: hidden;
+            height: 30%;
+            margin:10px;
+            width: 30%;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="container">
+    <div>
+        <a href="https://images.unsplash.com/photo-1589095093845-93a387ebc7ee?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" target="_blank">
+        <img src="https://images.unsplash.com/photo-1589095093845-93a387ebc7ee?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Architecture">
+        </a>
+    </div>
+    <div>
+        <a href="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" target="_blank">
+        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Rainy Weather">
+    </a>
+    </div>
+    <div>
+        <a href="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" target="_blank">
+        <img src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Landscape">
+    </a>
+    </div>
+    <div>
+        <a href="https://images.unsplash.com/photo-1544199932-81ca67a90802?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" target="_blank">
+        <img src="https://images.unsplash.com/photo-1544199932-81ca67a90802?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Architecture">
+    </a>
+    </div>
+    <div>
+        <a href="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" target="_blank">
+        <img src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="MilkyWay">
+    </a>
+    </div>
+    <div>
+        <a href="https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" target="_blank">
+        <img src="https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Wood-Texture">
+    </a>
+    </div>
+</div>
+</body>
+</html>
