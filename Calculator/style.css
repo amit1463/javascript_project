@@ -1,0 +1,114 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.calculator{
+    background: white;
+    width: 400px; 
+    border-radius: 12px;
+    box-shadow: 0 5pxb  30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.calculator-display{
+    background: black;
+    color: white;
+    margin: 0;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.calculator-display h1{
+    margin: 0;
+    padding: 25px;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+/* custom scroll */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: royalblue;
+}
+
+/* buttons */
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button{
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(184,184,184);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
+
+button:active{
+    transform: translateY(1px);
+}
+
+button:focus{
+    outline: none;
+}
+
+.operator{
+    background: grey;
+    color: white;
+    font-size: 30px;
+}
+
+.equal-sign{
+grid-column: 4;
+grid-row: 2/span 4;
+background-color: green ;
+}
+
+.clear{
+    background-color: red;
+    color: white;
+}
+
+.clear:hover{
+    filter: brightness(90%);
+}
+
+
+/* media query large large phone(vertical) */
+
+@media screen and (max-width:600px) {
+    .calculator{
+        width: 95% ;
+    }
+}
