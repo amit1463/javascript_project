@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ancestor-Tree</title>
+    <style>
+      * {
+        font-weight: bold;
+        margin: 15px;
+      }
+      .great-grand-father {
+        background-color: antiquewhite;
+        box-shadow: rgb(213, 206, 187) 0px 0px 15px 0px;
+        border-radius: 15px;
+      }
+      .grand-father {
+        background-color: bisque;
+        margin-left: 50px;
+        visibility: hidden;
+        border-radius: 15px;
+      }
+      .great-grand-father:hover {
+        background: none;
+        border: 4px solid black;
+      }
+
+      .great-grand-father:hover .grand-father {
+        background: none;
+        margin-bottom: 10px;
+        border: 4px solid black;
+        visibility: visible;
+      }
+      .uncle,
+      .father,
+      .aunty {
+        background-color: yellow;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        visibility: hidden;
+        border-radius: 15px;
+      }
+      .father {
+        color: red;
+        border-radius: 15px;
+      }
+      .great-grand-father > .grand-father {
+        color: blue;
+      }
+      /* .brother ~ div {
+            color: ;
+        } */
+      .great-grand-father::before {
+        content: "Great Grand Father";
+      }
+      .grand-father::before {
+        content: "Grand Father";
+      }
+      .father::before {
+        content: "Father";
+      }
+      .uncle::before {
+        content: "Uncle";
+      }
+      .aunty::before {
+        content: "Aunty";
+      }
+      .great-grand-father div div div {
+        border-radius: 5px ;
+        /* margin:0; */
+        margin-left: 50px;
+
+      }
+      .great-grand-father .grand-father:last-child div.uncle {
+        background-color: #8a2be2;
+      }
+      .great-grand-father .grand-father:last-child div.uncle div::first-letter {
+        font-size: 30px;
+      }
+
+      .brother[name="Bro"] {
+            color: green;
+        }     
+      .great-grand-father div.grand-father div div {
+        background-color: white;
+        color: blue;
+      }
+      .father {
+        visibility: hidden;
+      }
+      .aunty {
+        visibility: hidden;
+      }
+      .grand-father:hover .uncle {
+        visibility: visible;
+      }
+      .grand-father:hover .father {
+        visibility: visible;
+      }
+      .grand-father:hover .aunty {
+        visibility: visible;
+      }
+
+      .father div {
+        visibility: hidden;
+      }
+      .father:hover div {
+        visibility: visible;
+      }
+      .aunty div {
+        visibility: hidden;
+      }
+      .aunty:hover div {
+        visibility: visible;
+      }
+      .uncle div {
+        visibility: hidden;
+      }
+      .uncle:hover div {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="great-grand-father">
+      <div class="grand-father">
+        <div class="father">
+          <div class="you" title="Ravi Panchal" name="Ravi" data-id="1234">
+            You
+          </div>
+          <div class="brother" title="Bro" name="Bro">Brother</div>
+          <div class="sister">Sister</div>
+        </div>
+        <div class="uncle">
+          <div class="cousin" style="color: brown">Cousin 1</div>
+          <div class="cousin">Cousin 2</div>
+          <div class="cousin">Cousin 3</div>
+        </div>
+      </div>
+      <div class="grand-father">
+        <div class="uncle">
+          <div class="cousin">Cousin 3</div>
+          <div class="cousin">Cousin 4</div>
+          <div class="cousin">Cousin 5</div>
+        </div>
+        <div class="aunty">
+          <div class="cousin">Cousin 6</div>
+          <div class="cousin">Cousin 7</div>
+          <div class="cousin">Cousin 8</div>
+        </div>
+        <div class="uncle">
+          <div class="cousin">Cousin 9</div>
+          <div class="cousin">Cousin 10</div>
+          <div class="cousin">Cousin 11</div>
+        </div>
+      </div>
+      <div class="grand-father">
+        <div class="uncle">
+          <div class="cousin">Cousin 12</div>
+          <div class="cousin">Cousin 13</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
