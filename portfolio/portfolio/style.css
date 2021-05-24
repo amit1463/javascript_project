@@ -530,13 +530,13 @@ section .skills{
     justify-content: space-between;
     overflow: visible;
     /* width: 800px; */
-    width: 100%;
+    width: 80%;
     margin: 0;
     margin-left: 32px;
 }
 .featured-projects .project_pic img{
-    max-width: 20%;
-    max-height: 80%;
+    max-width: 13%;
+    max-height: 75%;
 }
 
 .featured-projects .project_caption {
@@ -1069,4 +1069,10 @@ body.night .experience .job_time, body.night .footer_copyright, body.night .intr
             padding: 100px 35px;
             line-height: 1.5;
         }
+}
+
+@media(max-width:370px){
+    .mytext{
+        margin-bottom: 100px;
+    }
 }
