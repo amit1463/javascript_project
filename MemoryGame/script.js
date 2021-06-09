@@ -21,7 +21,7 @@
 
 let timeout;
 
- let t = 10;
+ let t = 40;
  const timeRemain = ()=>{
     
     if(t==-1){
