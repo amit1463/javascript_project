@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start">
+        <h3 class="description">
+            <div class="hello">Hello there !!</div> <br>
+            This is a memory game in which there are six pairs <br>
+            that you have to find in a limited time of 40 seconds.<br>
+            your score will be displayed on the screen on how many pairs you found.<br><br>
+            <p>Good Luck !!<p><br>
+            <span>Press OK to start</span>
+        </h3>
+        <button class="btn">OK</button>
+    </div>
+    
+    <div class="container">
+
+        <h1 class="timediv">Time Remaining : <span class="time" >40</span> seconds</h1>
+        <h2>Score : <span id="result">0</span></h2>
+        <div class="grid">
+        </div>
+         <h1 class="show"></h1>
+    </div>
+
+    
+    
+    <div class = "showAtLast">
+      <h1> Game Over..<br>
+        <span>your Score is <span class="res"></span></span>
+      </h1>
+      
+    </div>
+    
+    <div class="won">
+       <h1>You Won...</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
